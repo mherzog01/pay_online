@@ -1,0 +1,19 @@
+{
+  "url": "https://example.com/checkout",
+  "selectors": [
+    "button.buy-now",
+    "button.pay",
+    "button[type='submit']",
+    "a[href*='checkout']",
+    "button"
+  ],
+  "textHints": [
+    "Buy Now",
+    "Pay Now",
+    "Purchase",
+    "Checkout"
+  ],
+  "waitForSelector": "button[type='submit']",
+  "waitForUrlContains": "checkout",
+  "waitMs": 15000
+}

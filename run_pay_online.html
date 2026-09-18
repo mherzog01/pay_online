@@ -1,0 +1,3 @@
+<!--This could also be a browser bookmark URL-->
+
+javascript:(()=>{const texts=['Buy Now','Pay Now','Purchase','Checkout']; const candidates=[...document.querySelectorAll('a,button,input[type="submit"],input[type="button"]')].filter(el=>{const value=(el.innerText||'').trim() || (el.value||'').trim(); return texts.some(text=>value.toLowerCase().includes(text.toLowerCase()));}); const target = candidates[0] || [...document.querySelectorAll('a,button,input[type="submit"],input[type="button"]')].find(el => /pay|buy|checkout|purchase/i.test((el.innerText||el.value||'').trim())); if(target){target.click();}})();
